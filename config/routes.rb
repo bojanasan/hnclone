@@ -1,6 +1,14 @@
 Hnclone::Application.routes.draw do
+  get "users/new"
+
   resources :users
 
+  root to: 'static_pages#home'
+  match '/signup', to: 'users#new'
+  match '/signin', to: 'users#id'
+  
+  # root_path => '/'
+  #  root_url  => 'http://localhost:3000/'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
