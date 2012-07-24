@@ -1,4 +1,6 @@
 Hnclone::Application.routes.draw do
+  resources :links
+
   get "users/new"
 
   resources :users
