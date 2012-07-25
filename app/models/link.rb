@@ -4,5 +4,5 @@ class Link < ActiveRecord::Base
   belongs_to :user
   
   validates_uniqueness_of :url
-  
+  #should validate unique urls in the databse too
 end

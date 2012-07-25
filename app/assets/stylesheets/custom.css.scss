@@ -67,7 +67,7 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
@@ -134,6 +134,8 @@ footer {
 }
 
 
+
+
 /* sidebar */
 
 aside {
@@ -161,4 +163,17 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
+}
+
+
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 25%;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 15px;
+  @include box_sizing;
 }
